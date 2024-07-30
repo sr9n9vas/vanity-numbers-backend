@@ -7,7 +7,11 @@ target
 .vscode
 *.iml
 
+build/*
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+.gradle
 
+vanity-number-generator/build/*
+vanity-number-generator/.gradle

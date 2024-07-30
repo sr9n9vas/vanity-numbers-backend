@@ -1,18 +1,28 @@
-# Welcome to your CDK Java project!
+# Vanity Numbers Generate
+This repo contains Lambda for generating vanity numbers and CDK code for creating stack in AWS
 
-This is a blank project for CDK development with Java.
+**Architecture**
+Refer  docs/Architecture.png
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+**Implemention**
 
-It is a [Maven](https://maven.apache.org/) based project, so you can open this project with any Maven compatible Java IDE to build and run tests.
+Refer docs/Implementation.MD
 
-## Useful commands
+**Prerequisites**
 
- * `mvn package`     compile and run tests
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
+* Java 17
+* Gradle > 8.9 
+
+**Build Project**
+
+./gradlew clean build
+
+**AWS CDK**
+* `cdk synth`       emits the synthesized CloudFormation template
+* `cdk deploy`      deploy this stack to your default AWS account/region
+ 
+**Endpoint**
+
+/vanity-numbers
 
 Enjoy!
